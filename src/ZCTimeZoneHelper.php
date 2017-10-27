@@ -1,7 +1,5 @@
 <?php	
 /**
- * timezone.php - create timezone data for use in icalendar file
- * 
  * @package	ZapCalLib
  * @author	Dan Cogliano <http://zcontent.net>
  * @copyright   Copyright (C) 2006 - 2017 by Dan Cogliano
@@ -9,8 +7,7 @@
  * @link	http://icalendar.org/php-library.html
  */
 
-// No direct access
-defined('_ZAPCAL') or die( 'Restricted access' );
+namespace Liliumdev\ICalendar;
 
 /**
  * Zap Calendar Time Zone Helper Class
@@ -61,7 +58,7 @@ class ZCTimeZoneHelper {
 			}
 			$tstart = gmmktime(0,0,0,1,1,$tmin);
 			$tend = gmmktime(23,59,59,12,31,$tmax);
-			$tz = new DateTimeZone($tzid);
+			$tz = new \DateTimeZone($tzid);
 			$transitions = $tz->getTransitions($tstart,$tend);
 			$tzobj = new ZCiCalNode("VTIMEZONE", $parentnode, true);
 			$datanode = new ZCiCalDataNode("TZID:" . str_replace("_"," ",$tzid));
