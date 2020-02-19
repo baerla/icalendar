@@ -7,7 +7,7 @@
  * @link	http://icalendar.org/php-library.html
  */
 
-namespace Liliumdev\ICalendar;
+namespace baerla\ICalendar;
 
 /**
  * Object for storing an unfolded iCalendar line

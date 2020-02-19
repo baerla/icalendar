@@ -1,18 +1,22 @@
 {
-    "name": "liliumdev/icalendar",
+    "name": "baerla/icalendar",
     "description": "A Composer package for creating icalendar files (ZContent/icalendar)",
     "license": "GPL-3.0",
-    "keywords": ["icalendar", "liliumdev"],
+    "keywords": ["icalendar", "baerla"],
     "authors": [
         {
             "name": "ZContent",
             "email": "ahmed.popovic@gmail.com"
+        },
+        {
+            "name": "Baerla",
+            "email": "patrick.baer00@gmail.com"
         }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
-            "Liliumdev\\ICalendar\\": "src"
+            "baerla\\ICalendar\\": "src"
         }
     }
 }

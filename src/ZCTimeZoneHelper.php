@@ -7,7 +7,7 @@
  * @link	http://icalendar.org/php-library.html
  */
 
-namespace Liliumdev\ICalendar;
+namespace baerla\ICalendar;
 
 /**
  * Zap Calendar Time Zone Helper Class
